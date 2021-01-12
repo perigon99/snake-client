@@ -15,7 +15,7 @@ const connect = function() {
   
   conn.setEncoding('utf8');
   conn.on("connect", () => {console.log("Connexion established") }) 
- 
+  conn.on("connect", () => {conn.write("Name: max")})
   return conn;
 }
 

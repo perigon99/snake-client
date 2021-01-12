@@ -1,5 +1,7 @@
 const net = require('net');
 const { connect } = require('./client');
-
-console.log('Connecting ...');
+const { on } = require('process');
 connect();
+console.log('Connecting ...');
+
+
