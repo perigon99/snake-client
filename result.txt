@@ -1,0 +1,31 @@
+total 32
+drwxrwxr-x 1 vagrant vagrant 4096 Jan 13 14:48 .
+drwxrwxr-x 1 vagrant vagrant 4096 Jan 12 21:03 ..
+-rw-rw-r-- 1 vagrant vagrant 1117 Jan 13 14:42 client.js
+-rw-rw-r-- 1 vagrant vagrant  282 Jan 13 14:24 constant.js
+drwxrwxr-x 1 vagrant vagrant 4096 Jan 13 14:44 .git
+-rw-rw-r-- 1 vagrant vagrant  815 Jan 13 14:44 input.js
+-rw-rw-r-- 1 vagrant vagrant  163 Jan 13 01:48 play.js
+-rw-rw-r-- 1 vagrant vagrant    0 Jan 13 14:48 result.txt
+drwxrwxr-x 1 vagrant vagrant 4096 Jan 12 18:39 snakeserver
+total 36
+drwxrwxr-x 1 vagrant vagrant 4096 Jan 13 14:48 .
+drwxrwxr-x 1 vagrant vagrant 4096 Jan 12 21:03 ..
+-rw-rw-r-- 1 vagrant vagrant 1117 Jan 13 14:42 client.js
+-rw-rw-r-- 1 vagrant vagrant  282 Jan 13 14:24 constant.js
+drwxrwxr-x 1 vagrant vagrant 4096 Jan 13 14:48 .git
+-rw-rw-r-- 1 vagrant vagrant  815 Jan 13 14:44 input.js
+-rw-rw-r-- 1 vagrant vagrant  163 Jan 13 01:48 play.js
+-rw-rw-r-- 1 vagrant vagrant  504 Jan 13 14:48 result.txt
+drwxrwxr-x 1 vagrant vagrant 4096 Jan 12 18:39 snakeserver
+total 36
+drwxrwxr-x 1 vagrant vagrant 4096 Jan 13 14:49 .
+drwxrwxr-x 1 vagrant vagrant 4096 Jan 12 21:03 ..
+-rw-rw-r-- 1 vagrant vagrant 1117 Jan 13 14:42 client.js
+-rw-rw-r-- 1 vagrant vagrant  282 Jan 13 14:24 constant.js
+drwxrwxr-x 1 vagrant vagrant 4096 Jan 13 14:50 .git
+-rw-rw-r-- 1 vagrant vagrant  815 Jan 13 14:44 input.js
+-rw-rw-r-- 1 vagrant vagrant  163 Jan 13 01:48 play.js
+-rw-rw-r-- 1 vagrant vagrant    0 Jan 13 14:49 result
+-rw-rw-r-- 1 vagrant vagrant 1008 Jan 13 14:49 result.txt
+drwxrwxr-x 1 vagrant vagrant 4096 Jan 12 18:39 snakeserver

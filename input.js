@@ -1,5 +1,5 @@
 const net = require('net');
-
+const {move, message} = require('./constant')
 const { on } = require('process');
 
 // Stores the active TCP connection object.
@@ -13,34 +13,38 @@ const setupInput = function(conn) {
   stdin.setRawMode(true);
   stdin.setEncoding('utf8');
   stdin.resume();
-  stdin.on("data", (key) => handleUserInput(key, connection))
+  stdin.on("data", handleUserInput)
   
  
  return stdin
 }
 
 
-const handleUserInput = (data, conn) => {
+const handleUserInput = (data) => {
   if (data === '\u0003') {
      process.exit();
     }
     if(data === "w") {
-      conn.write = "Move: up"
-        
+      connection.write(move.up)       
      };
-      
-    
     if(data === "a") {
-      console.log("A key pressed")
+      connection.write(move.left) 
     }
     if(data === "s") {
-      console.log("S key pressed")
+      connection.write(move.down) 
     }
     if(data === "d") {
-      console.log("d key pressed")
-    }
-  
-   
+      connection.write(move.right) 
+    }  
+    if(data === "q") {
+      connection.write(message.hi) 
+    } 
+    if(data === "e") {
+      connection.write(message.win) 
+    } 
+    if(data === "z") {
+      connection.write(message.loose) 
+    } 
 }
 
 module.exports = {handleUserInput, setupInput};

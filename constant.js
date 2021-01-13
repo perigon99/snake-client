@@ -4,7 +4,7 @@ const move = {
   up: "Move: up",
   down: "Move: down",
   left:  "Move: left",
-  right: "Move: rigth"
+  right: "Move: right"
 }
 const message = {
   hi: "Hello !",
