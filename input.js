@@ -7,20 +7,30 @@ const setupInput = function(callback) {
   stdin.setRawMode(true);
   stdin.setEncoding('utf8');
   stdin.resume();
-  stdin.on(callback, (key) => {
-    key = key
-    if (key === '\u0003') {
-    process.exit();
-  }
+  stdin.on("data", (key) => handleUserInput(key))
   
-    return stdin;
-  }) 
+ return stdin;
 }
 
 
-
-const handleUserInput = () => {
-  return "data"
+const handleUserInput = (data) => {
+  if (data === '\u0003') {
+     process.exit();
+    }
+    if(data === "w") {
+      console.log("W key pressed")
+    }
+    if(data === "a") {
+      console.log("A key pressed")
+    }
+    if(data === "s") {
+      console.log("S key pressed")
+    }
+    if(data === "d") {
+      console.log("d key pressed")
+    }
+  
+   
 }
 
 module.exports = {handleUserInput, setupInput};
