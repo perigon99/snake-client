@@ -7,9 +7,9 @@ const move = {
   right: "Move: right"
 }
 const message = {
-  hi: "Hello !",
-  win: "I gonna win !!!",
-  loose: "Let rematch"
+  hi: "Say: Hello !",
+  win: "Say: I gonna win !!!",
+  loose: "Say: Let rematch"
 }
 
 module.exports = {host, port, move, message}
