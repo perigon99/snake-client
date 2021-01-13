@@ -2,24 +2,34 @@ const net = require('net');
 
 const { on } = require('process');
 
-const setupInput = function(callback) {
+// Stores the active TCP connection object.
+
+let connection; 
+
+const setupInput = function(conn) {
+  connection = conn
+  
   const stdin = process.stdin;
   stdin.setRawMode(true);
   stdin.setEncoding('utf8');
   stdin.resume();
-  stdin.on("data", (key) => handleUserInput(key))
+  stdin.on("data", (key) => handleUserInput(key, connection))
   
- return stdin;
+ 
+ return stdin
 }
 
 
-const handleUserInput = (data) => {
+const handleUserInput = (data, conn) => {
   if (data === '\u0003') {
      process.exit();
     }
     if(data === "w") {
-      console.log("W key pressed")
-    }
+      conn.write = "Move: up"
+        
+     };
+      
+    
     if(data === "a") {
       console.log("A key pressed")
     }

@@ -1,6 +1,6 @@
 const { on } = require('process');
 const net = require('net');
-
+const {host, port} = require('./constant')
 
 
 /**
@@ -8,15 +8,15 @@ const net = require('net');
  */
 const connect = function() {
   const conn = net.createConnection({ 
-    host: 'localhost',
-    port: 50541
+    host: host,
+    port: port
   });
   // interpret incoming data as text
   
   conn.setEncoding('utf8');
   conn.on("connect", () => {console.log("Connexion established") }) 
   conn.on("connect", () => {
-    conn.write("Name: max");
+   // conn.write("Name: max");
     // conn.write("Move: up");
     // setInterval(() => {
     //  conn.write("Move: up"); 
